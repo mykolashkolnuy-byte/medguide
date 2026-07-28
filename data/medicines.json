@@ -15,5 +15,71 @@
       "Зубний біль"
     ],
     "image": "images/medicines/paracetamol.png"
+  },
+  {
+    "id": 2,
+    "name": "Ібупрофен",
+    "ingredient": "Ібупрофен",
+    "category": "Знеболювальні",
+    "manufacturer": "Arterium",
+    "form": "Таблетки",
+    "dosage": "200 мг",
+    "prescription": false,
+    "description": "Нестероїдний протизапальний засіб.",
+    "uses": [
+      "Головний біль",
+      "Біль у м'язах",
+      "Запалення"
+    ],
+    "image": "images/medicines/ibuprofen.png"
+  },
+  {
+    "id": 3,
+    "name": "Но-шпа",
+    "ingredient": "Дротаверин",
+    "category": "Спазмолітики",
+    "manufacturer": "Sanofi",
+    "form": "Таблетки",
+    "dosage": "40 мг",
+    "prescription": false,
+    "description": "Спазмолітичний препарат.",
+    "uses": [
+      "Спазми",
+      "Біль у животі"
+    ],
+    "image": "images/medicines/noshpa.png"
+  },
+  {
+    "id": 4,
+    "name": "Цитрамон",
+    "ingredient": "Комбінований склад",
+    "category": "Знеболювальні",
+    "manufacturer": "Дарниця",
+    "form": "Таблетки",
+    "dosage": "Стандартне",
+    "prescription": false,
+    "description": "Комбінований знеболювальний препарат.",
+    "uses": [
+      "Головний біль",
+      "Мігрень"
+    ],
+    "image": "images/medicines/citramon.png"
+  },
+  {
+    "id": 5,
+    "name": "Лоратадин",
+    "ingredient": "Лоратадин",
+    "category": "Антигістамінні",
+    "manufacturer": "Київський вітамінний завод",
+    "form": "Таблетки",
+    "dosage": "10 мг",
+    "prescription": false,
+    "description": "Протиалергічний препарат.",
+    "uses": [
+      "Алергія",
+      "Нежить",
+      "Свербіж"
+    ],
+    "image": "images/medicines/loratadine.png"
   }
 ]
