@@ -725,3 +725,366 @@ button{
     background:#2E7D32;
 
 }
+/* =======================================================
+   MEDGUIDE v2
+   PART 3
+   MEDICINE PAGE + TABLES + ALERTS + RESPONSIVE BLOCKS
+=======================================================*/
+
+/* ===== Medicine Layout ===== */
+
+.medicine-page{
+
+    width:min(1280px,92%);
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:360px 1fr;
+
+    gap:40px;
+
+}
+
+.medicine-image{
+
+    background:white;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow);
+
+    padding:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:420px;
+
+}
+
+.medicine-image img{
+
+    max-width:100%;
+
+    max-height:320px;
+
+    object-fit:contain;
+
+}
+
+.medicine-placeholder{
+
+    font-size:140px;
+
+}
+
+/* ===== Info ===== */
+
+.medicine-info{
+
+    background:white;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow);
+
+    padding:40px;
+
+}
+
+.medicine-info h1{
+
+    font-size:44px;
+
+    margin-bottom:18px;
+
+}
+
+.medicine-description{
+
+    font-size:18px;
+
+    color:#555;
+
+    margin-bottom:30px;
+
+}
+
+/* ===== Info Grid ===== */
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:25px;
+
+}
+
+.info-item{
+
+    background:#f8f9fa;
+
+    border-radius:16px;
+
+    padding:18px;
+
+}
+
+.info-item span{
+
+    display:block;
+
+    font-size:13px;
+
+    color:#777;
+
+    margin-bottom:6px;
+
+}
+
+.info-item strong{
+
+    font-size:17px;
+
+}
+
+/* ===== Sections ===== */
+
+.section-box{
+
+    width:min(1280px,92%);
+
+    margin:35px auto;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.section-box h2{
+
+    color:var(--green);
+
+    margin-bottom:20px;
+
+}
+
+/* ===== Alert ===== */
+
+.alert{
+
+    border-left:6px solid #f9a825;
+
+    background:#fff8e1;
+
+    padding:20px;
+
+    border-radius:14px;
+
+    color:#5d4037;
+
+    margin-top:25px;
+
+}
+
+/* ===== Table ===== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+th{
+
+    background:var(--green);
+
+    color:white;
+
+    padding:15px;
+
+    text-align:left;
+
+}
+
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+tr:hover{
+
+    background:#f7fff7;
+
+}
+
+/* ===== Breadcrumb ===== */
+
+.breadcrumb{
+
+    width:min(1280px,92%);
+
+    margin:25px auto 0;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.breadcrumb a{
+
+    color:var(--green);
+
+}
+
+/* ===== Pills ===== */
+
+.tag{
+
+    display:inline-block;
+
+    background:#E8F5E9;
+
+    color:#2E7D32;
+
+    padding:8px 15px;
+
+    border-radius:40px;
+
+    margin:5px;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width:900px){
+
+.medicine-page{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:45px;
+
+}
+
+.hero-right{
+
+margin-top:35px;
+
+font-size:130px;
+
+}
+
+.header{
+
+padding:18px 25px;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.info-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.grid-2{
+
+grid-template-columns:1fr;
+
+}
+
+.grid-3{
+
+grid-template-columns:1fr;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media (max-width:600px){
+
+.hero-left h1{
+
+font-size:40px;
+
+}
+
+.page-title h1{
+
+font-size:36px;
+
+}
+
+.medicine-info h1{
+
+font-size:32px;
+
+}
+
+.hero{
+
+padding:30px;
+
+margin:20px;
+
+}
+
+}
