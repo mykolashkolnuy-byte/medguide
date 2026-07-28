@@ -1,40 +1,37 @@
 async function loadMedicine() {
 
     const params = new URLSearchParams(window.location.search);
-
     const id = Number(params.get("id"));
 
     const response = await fetch("data/medicines.json");
-
     const medicines = await response.json();
 
-    const medicine = medicines.find(item => item.id === id);
+    const medicine = medicines.find(m => m.id === id);
 
     if (!medicine) {
-
-        document.getElementById("medicine-name").textContent = "Препарат не знайдено";
-
+        document.body.innerHTML = "<h1>Препарат не знайдено</h1>";
         return;
-
     }
 
     document.getElementById("medicine-name").textContent = medicine.name;
 
-    document.getElementById("medicine-description").textContent = medicine.description;
+    document.getElementById("medicine-description").textContent =
+        medicine.description;
 
-    document.getElementById("ingredient").textContent = medicine.ingredient;
+    document.getElementById("medicine-category").textContent =
+        medicine.category;
 
-    document.getElementById("category").textContent = medicine.category;
+    document.getElementById("medicine-manufacturer").textContent =
+        medicine.manufacturer;
 
-    const list = document.getElementById("uses");
+    document.getElementById("medicine-form").textContent =
+        medicine.form;
 
-    list.innerHTML = "";
+    document.getElementById("medicine-dosage").textContent =
+        medicine.dosage;
 
-    medicine.uses.forEach(use => {
-
-        list.innerHTML += `<li>${use}</li>`;
-
-    });
+    document.getElementById("medicine-ingredient").textContent =
+        medicine.ingredient;
 
 }
 
