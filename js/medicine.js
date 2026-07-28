@@ -14,6 +14,7 @@ async function loadMedicine() {
     }
 
     document.getElementById("medicine-name").textContent = medicine.name;
+document.getElementById("breadcrumb-name").textContent = medicine.name;
 
     document.getElementById("medicine-description").textContent =
         medicine.description;
