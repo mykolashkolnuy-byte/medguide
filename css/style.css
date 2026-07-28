@@ -1088,3 +1088,58 @@ margin:20px;
 }
 
 }
+/* ===== FILTERS ===== */
+
+.filters{
+
+width:min(1280px,92%);
+
+margin:30px auto;
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+justify-content:center;
+
+}
+
+.filter-btn{
+
+background:white;
+
+color:#2E7D32;
+
+border:2px solid #2E7D32;
+
+padding:12px 22px;
+
+border-radius:50px;
+
+font-size:15px;
+
+font-weight:bold;
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+.filter-btn:hover{
+
+background:#2E7D32;
+
+color:white;
+
+}
+
+.filter-btn.active{
+
+background:#2E7D32;
+
+color:white;
+
+}
