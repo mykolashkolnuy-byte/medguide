@@ -49,7 +49,33 @@ function renderMedicines(list){
 }
 
 loadMedicines();
+const filterButtons=document.querySelectorAll(".filter-btn");
 
+filterButtons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+document.querySelector(".filter-btn.active")?.classList.remove("active");
+
+button.classList.add("active");
+
+const category=button.dataset.category;
+
+if(category==="all"){
+
+renderMedicines(medicines);
+
+return;
+
+}
+
+const filtered=medicines.filter(m=>m.category===category);
+
+renderMedicines(filtered);
+
+});
+
+});
 document.addEventListener("DOMContentLoaded",()=>{
 
 const search=document.getElementById("search");
