@@ -1,36 +1,31 @@
 async function loadMedicines() {
 
     const response = await fetch("data/medicines.json");
-
     const medicines = await response.json();
 
-    const cards = document.querySelector(".cards");
+    const container = document.getElementById("medicine-list");
 
-    cards.innerHTML = "";
+    container.innerHTML = "";
 
     medicines.forEach(medicine => {
 
-        cards.innerHTML += `
+        container.innerHTML += `
             <div class="card">
 
                 <h3>${medicine.name}</h3>
 
                 <p>${medicine.description}</p>
 
-                <button onclick="openMedicine(${medicine.id})">
-                    Детальніше
-                </button>
+                <p><strong>Категорія:</strong> ${medicine.category}</p>
+
+                <a href="medicine.html?id=${medicine.id}">
+                    <button>Детальніше</button>
+                </a>
 
             </div>
         `;
 
     });
-
-}
-
-function openMedicine(id){
-
-    window.location.href = `medicine.html?id=${id}`;
 
 }
 
