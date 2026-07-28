@@ -1,28 +1,41 @@
+let medicines = [];
+
 async function loadMedicines() {
 
     const response = await fetch("data/medicines.json");
-    const medicines = await response.json();
+
+    medicines = await response.json();
+
+    renderMedicines(medicines);
+
+}
+
+function renderMedicines(list){
 
     const container = document.getElementById("medicine-list");
 
     container.innerHTML = "";
 
-    medicines.forEach(medicine => {
+    list.forEach(medicine=>{
 
         container.innerHTML += `
-            <div class="card">
 
-                <h3>${medicine.name}</h3>
+        <div class="card">
 
-                <p>${medicine.description}</p>
+            <h3>${medicine.name}</h3>
 
-                <p><strong>Категорія:</strong> ${medicine.category}</p>
+            <p>${medicine.description}</p>
 
-                <a href="medicine.html?id=${medicine.id}">
-                    <button>Детальніше</button>
-                </a>
+            <p><strong>Категорія:</strong> ${medicine.category}</p>
 
-            </div>
+            <a href="medicine.html?id=${medicine.id}">
+
+                <button>Детальніше</button>
+
+            </a>
+
+        </div>
+
         `;
 
     });
@@ -30,3 +43,31 @@ async function loadMedicines() {
 }
 
 loadMedicines();
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+const search=document.getElementById("search");
+
+search.addEventListener("input",()=>{
+
+const text=search.value.toLowerCase();
+
+const filtered=medicines.filter(medicine=>
+
+medicine.name.toLowerCase().includes(text)
+
+||
+
+medicine.category.toLowerCase().includes(text)
+
+||
+
+medicine.description.toLowerCase().includes(text)
+
+);
+
+renderMedicines(filtered);
+
+});
+
+});
