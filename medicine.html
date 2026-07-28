@@ -2,10 +2,12 @@
 <html lang="uk">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MedGuide</title>
+<title>Препарат | MedGuide</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -15,57 +17,109 @@
 
 <header class="header">
 
-    <div class="logo">
-        💊 MedGuide
-    </div>
+<div class="logo">
+💊 MedGuide
+</div>
 
-    <nav>
+<nav>
 
-        <a href="index.html">Головна</a>
+<a href="index.html">Головна</a>
 
-        <a href="medicines.html">Ліки</a>
+<a href="medicines.html">Ліки</a>
 
-        <a href="categories.html">Категорії</a>
+<a href="categories.html">Категорії</a>
 
-        <a href="about.html">Про сайт</a>
+<a href="about.html">Про сайт</a>
 
-    </nav>
+</nav>
 
 </header>
 
 <main>
 
-<section class="hero">
+<div class="breadcrumb">
 
-<h2 id="medicine-name">Завантаження...</h2>
+<a href="index.html">Головна</a>
 
-<p id="medicine-description"></p>
+>
 
-</section>
+<a href="medicines.html">Ліки</a>
 
-<section class="cards">
+>
 
-<div class="card">
-
-<h3>Діюча речовина</h3>
-
-<p id="ingredient"></p>
+<span id="breadcrumb-name">
+Завантаження...
+</span>
 
 </div>
 
-<div class="card">
+<section class="medicine-page">
 
-<h3>Категорія</h3>
+<div class="medicine-image">
 
-<p id="category"></p>
+<div class="medicine-placeholder">
+💊
+</div>
 
 </div>
 
-<div class="card">
+<div class="medicine-info">
 
-<h3>Застосування</h3>
+<h1 id="medicine-name">
+Завантаження...
+</h1>
 
-<ul id="uses"></ul>
+<p
+class="medicine-description"
+id="medicine-description">
+
+Завантаження...
+
+</p>
+
+<div class="info-grid">
+
+<div class="info-item">
+
+<span>Категорія</span>
+
+<strong id="medicine-category"></strong>
+
+</div>
+
+<div class="info-item">
+
+<span>Виробник</span>
+
+<strong id="medicine-manufacturer"></strong>
+
+</div>
+
+<div class="info-item">
+
+<span>Форма</span>
+
+<strong id="medicine-form"></strong>
+
+</div>
+
+<div class="info-item">
+
+<span>Дозування</span>
+
+<strong id="medicine-dosage"></strong>
+
+</div>
+
+<div class="info-item">
+
+<span>Діюча речовина</span>
+
+<strong id="medicine-ingredient"></strong>
+
+</div>
+
+</div>
 
 </div>
 
