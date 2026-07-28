@@ -2,37 +2,18 @@
   {
     "id": 1,
     "name": "Парацетамол",
-    "ingredient": "Paracetamol",
+    "ingredient": "Парацетамол",
     "category": "Жарознижувальні",
+    "manufacturer": "Дарниця",
+    "form": "Таблетки",
+    "dosage": "500 мг",
+    "prescription": false,
     "description": "Жарознижувальний та знеболювальний препарат.",
     "uses": [
       "Гарячка",
       "Головний біль",
       "Зубний біль"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Ібупрофен",
-    "ingredient": "Ibuprofen",
-    "category": "Протизапальні",
-    "description": "Протизапальний та знеболювальний препарат.",
-    "uses": [
-      "Біль",
-      "Запалення",
-      "Температура"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Лоратадин",
-    "ingredient": "Loratadine",
-    "category": "Антигістамінні",
-    "description": "Протиалергічний препарат.",
-    "uses": [
-      "Алергія",
-      "Нежить",
-      "Свербіж"
-    ]
+    ],
+    "image": "images/medicines/paracetamol.png"
   }
 ]
