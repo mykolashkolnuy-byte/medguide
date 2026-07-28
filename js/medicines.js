@@ -19,24 +19,30 @@ function renderMedicines(list){
     list.forEach(medicine=>{
 
         container.innerHTML += `
+<div class="card">
 
-        <div class="card">
+    <div class="card-top">
+        💊
+    </div>
 
-            <h3>${medicine.name}</h3>
+    <div class="card-body">
 
-            <p>${medicine.description}</p>
+        <span class="category">
+            ${medicine.category}
+        </span>
 
-            <p><strong>Категорія:</strong> ${medicine.category}</p>
+        <h3>${medicine.name}</h3>
 
-            <a href="medicine.html?id=${medicine.id}">
+        <p>${medicine.description}</p>
 
-                <button>Детальніше</button>
+        <a href="medicine.html?id=${medicine.id}">
+            <button>Детальніше</button>
+        </a>
 
-            </a>
+    </div>
 
-        </div>
-
-        `;
+</div>
+`;
 
     });
 
